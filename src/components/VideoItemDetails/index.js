@@ -292,47 +292,29 @@ class VideoItemDetails extends Component {
                     </VideoViewsDateContainer>
 
                     <ViewerResponseContainer>
-                      <ViewerLikedContainer>
-                        <ViwerLikeButton
-                          onClick={this.onClickLike}
-                          iconColor={likeStatus ? '#2563eb' : colorIcon}
-                        >
-                          <BiLike className="like-icons" />
-                        </ViwerLikeButton>
-                        <ViewerLikeText
-                          likeTextColor={likeStatus ? '#2563eb' : likeColor}
-                        >
-                          Like
-                        </ViewerLikeText>
-                      </ViewerLikedContainer>
+                      <ViwerLikeButton
+                        onClick={this.onClickLike}
+                        iconColor={likeStatus ? '#2563eb' : colorIcon}
+                      >
+                        <BiLike className="like-icons" />
+                        Like
+                      </ViwerLikeButton>
 
-                      <ViewerLikedContainer>
-                        <ViwerLikeButton
-                          onClick={this.onClickDislike}
-                          iconColor={dislikeStatus ? '#3b82f6' : colorIcon}
-                        >
-                          <BiDislike className="like-icons" />
-                        </ViwerLikeButton>
-                        <ViewerLikeText
-                          likeTextColor={dislikeStatus ? '#3b82f6' : likeColor}
-                        >
-                          Dislike
-                        </ViewerLikeText>
-                      </ViewerLikedContainer>
+                      <ViwerLikeButton
+                        onClick={this.onClickDislike}
+                        iconColor={dislikeStatus ? '#3b82f6' : colorIcon}
+                      >
+                        <BiDislike className="like-icons" />
+                        Dislike
+                      </ViwerLikeButton>
 
-                      <ViewerLikedContainer>
-                        <ViwerLikeButton
-                          onClick={onSaveVideos}
-                          iconColor={isVideoSaved ? '#2563eb' : colorIcon}
-                        >
-                          <BiListPlus className="like-icons" />
-                        </ViwerLikeButton>
-                        <ViewerLikeText
-                          likeTextColor={isVideoSaved ? '#2563eb' : likeColor}
-                        >
-                          {isVideoSaved ? 'Saved' : 'Save'}
-                        </ViewerLikeText>
-                      </ViewerLikedContainer>
+                      <ViwerLikeButton
+                        onClick={onSaveVideos}
+                        iconColor={isVideoSaved ? '#2563eb' : colorIcon}
+                      >
+                        <BiListPlus className="like-icons" />
+                        {isVideoSaved ? 'Saved' : 'Save'}
+                      </ViwerLikeButton>
                     </ViewerResponseContainer>
                   </VideoResponsesContainer>
                   <Hrline lineColor={colorLine} />
