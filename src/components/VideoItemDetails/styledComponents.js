@@ -98,11 +98,14 @@ export const ViewerLikedContainer = styled.div`
 
 export const ViwerLikeButton = styled.button`
   border: none;
+
   background-color: transparent;
   color: ${props => props.iconColor};
   padding-right: 0px;
   cursor: pointer;
   outline: none;
+  display: flex;
+  margin-right: 13px;
 `
 
 export const ViewerLikeText = styled.p`
