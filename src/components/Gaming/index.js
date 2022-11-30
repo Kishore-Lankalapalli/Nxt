@@ -73,7 +73,7 @@ class Gaming extends Component {
 
     if (response.ok === true) {
       this.setState({gamingVideos: gamingData, apiStatus: apiConstants.success})
-    } else if (response.status === 401) {
+    } else  {
       this.setState({apiStatus: apiConstants.failure})
     }
   }
